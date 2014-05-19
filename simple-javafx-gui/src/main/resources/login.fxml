@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="182.0" prefWidth="400.0" style="" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="de.witi.xbmc.jfx.LoginController">
+  <children>
+    <TextField fx:id="urlField" layoutX="14.0" layoutY="69.0" prefWidth="125.0" promptText="openelec:9090" style="" text="openelec:9090" />
+    <TextField editable="false" layoutX="261.0" layoutY="69.0" prefWidth="125.0" text="username" />
+    <PasswordField editable="false" layoutX="261.0" layoutY="91.0" prefWidth="125.0" text="password" />
+    <Button fx:id="button" defaultButton="true" layoutX="136.0" layoutY="145.0" mnemonicParsing="false" onAction="#connect" prefWidth="125.0" text="Connect" />
+    <Label id="header" alignment="CENTER" layoutX="0.0" layoutY="14.0" prefWidth="400.0" text="XBMC Desktop Client" textAlignment="LEFT" textFill="BLACK" textOverrun="CLIP">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+    </Label>
+    <Label fx:id="msgLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="81.0" layoutY="113.0" prefHeight="34.0" prefWidth="238.0" text="" textAlignment="CENTER" textFill="BLACK">
+      <font>
+        <Font size="16.0" />
+      </font>
+    </Label>
+  </children>
+  <stylesheets>
+    <URL value="@login.css" />
+  </stylesheets>
+</AnchorPane>
